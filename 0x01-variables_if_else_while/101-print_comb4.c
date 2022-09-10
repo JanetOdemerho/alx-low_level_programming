@@ -7,31 +7,26 @@
 int main(void)
 {
 	int i = 0, p, t;
-		while (i <= 9)
+		for (i = 0; i <= 9; i++)
+	{
+		for (p = 0; p <= 9; p++)
 		{
-			p = 0;
-			while (p <= 9)
+			for (t = 0; t <= 9; t++)
 			{
-				t = 0;
-				while (t <= 9)
+			if (t > p && p > i)
+			{
+				putchar(i + '0');
+				putchar(p + '0');
+				putchar(t + '0');
+					if (i != 7)
 				{
-					if (i != p && i < p && p != t && p < t)
-					{
-						putchar(i + 48);
-						putchar(p + 48);
-						putchar(t + 48);
-						if (i + p + t != 24)
-						{
-							putchar(',');
-							putchar(' ');
-						}
-					}
-					++t;
+						putchar(',');
+						putchar(' ');
 				}
-				++p;
 			}
-			++i
+			}
 		}
-		putchar('\n');
+	}
+	putchar('\n');
 	return (0);
 }
