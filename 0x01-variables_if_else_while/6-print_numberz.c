@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 
 /**
  * main - print all single digit numbers of base 10 without the char function
@@ -10,6 +11,6 @@ int main(void)
 	int n;
 		for (n = '0'; n <= 9; n++)
 			putchar(n);
-		puts("\n");
-		return (0);
+		write("\n");
+	return (0);
 }
