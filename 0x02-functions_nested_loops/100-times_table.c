@@ -7,18 +7,17 @@
  */
 void print_times_table(int n)
 {
-	int l, o, y;
+	int l;
+	int o;
+	int y;
 		if (n >= 0 && n <= 15)
-		{
 			for (l = 0; l <= n; l++)
 			{
 				for (o = 0; o <= n; o++)
 				{
 					y = o * l;
 					if (o == 0)
-					{
 						_putchar(y + '0');
-					}
 					else if (y < 10 && o != 0)
 					{
 						_putchar(',');
@@ -45,5 +44,4 @@ void print_times_table(int n)
 					}
 				}
 			}
-		}
 }
