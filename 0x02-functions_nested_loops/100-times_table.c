@@ -1,49 +1,46 @@
 #include "main.h"
-
 /**
  * print_times_table - prints the n times table, starting with 0
  * @n: int argument of the function
- * Return: 0
  */
 void print_times_table(int n)
 {
-	int l;
-	int o;
-	int y;
-		if (n >= 0 && n <= 15)
+	int l, m, p;
+	{
+		if (n <= 15 && n > 0)
+		{
 			for (l = 0; l <= n; l++)
 			{
-				for (o = 0; o <= n; o++)
+				_putchar('0');
+				_putchar(',');
+				for (m = 1; m <= n; m++)
 				{
-					y = o * l;
-					if (o == 0)
-						_putchar(y + '0');
-					else if (y < 10 && o != 0)
+					p = m * l;
+					_putchar(' ');
+					if (p / 100 >= 1)
 					{
-						_putchar(',');
-						_putchar(' ');
-						_putchar(' ');
-						_putchar(' ');
-						_putchar(y + '0');
+						_putchar('0' + p / 100);
+						_putchar('0' + p / 10 % 10);
+						_putchar('0' + p % 10);
 					}
-					else if (y >= 10 && y < 100)
+					else if (p / 10 >= 1)
 					{
-						_putchar(',');
-						_putchar(',');
 						_putchar(' ');
-						_putchar((y / 10) + '0');
-						_putchar((y % 10) + '0');
+						_putchar((p / 10) + '0');
+						_putchar((p % 10) + '0');
 					}
-					else if (y >= 100)
+					else
 					{
-						_putchar(',');
 						_putchar(' ');
-						_putchar((y / 100) + '0');
-						_putchar(((y / 10) % 10) + '0');
-						_putchar((y % 10) + '0');
+						_putchar(' ');
+						_putchar(p + '0');
 					}
+					if (m < n)
+						_putchar(',');
+					else
+						_putchar('\n');
 				}
-				_putchar('\n');
 			}
-			_putchar('\n');
+		}
+	}
 }
