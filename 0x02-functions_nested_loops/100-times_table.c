@@ -17,7 +17,7 @@ void print_times_table(int n)
 				y = l * o;
 				if (o == 0)
 				{
-					_putchar(k + '0');
+					_putchar(y + '0');
 				}
 				else if (y < 10 && o != 0)
 				{
@@ -40,8 +40,8 @@ void print_times_table(int n)
 					_putchar(',');
 					_putchar(' ');
 					_putchar((y / 100) + '0');
-					_putchar(((k / 10) % 10) + '0');
-					_putchar((k % 10) + '0');
+					_putchar(((y / 10) % 10) + '0');
+					_putchar((y % 10) + '0');
 				}
 			}
 		}
