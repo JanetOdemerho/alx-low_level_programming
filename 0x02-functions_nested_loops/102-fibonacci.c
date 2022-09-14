@@ -9,7 +9,7 @@ int main(void)
 	long int m, n, o, next;
 		n = 1;
 		o = 2;
-		for (m = 1; m <= 50; ++1)
+		for (m = 1; m <= 50; ++m)
 		{
 			if (n != 20365011074)
 			{
