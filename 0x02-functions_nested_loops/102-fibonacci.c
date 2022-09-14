@@ -23,5 +23,5 @@ int main(void)
 			n = o;
 			o = next;
 		}
-	return (0)
+	return (0);
 }
