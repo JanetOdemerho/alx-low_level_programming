@@ -3,9 +3,8 @@
 
 /**
  * print_line - entry point
- * @c: first parameter
- * @s: second parameter
- * @l: third parameter
+ * @b: first parameter
+ * @size: second parameter
  * Return: void
  */
 
