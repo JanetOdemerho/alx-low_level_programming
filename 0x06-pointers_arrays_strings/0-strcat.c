@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * strcat - entry point
+ * _strcat - entry point
+ * Description: Write a function that concatenates two strings
  * @dest: first parameter
  * @src: second parameter
  * Return: destination string
