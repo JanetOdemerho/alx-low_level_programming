@@ -7,7 +7,7 @@
  * Return: s after change
  */
 
-char *string_toupper(char *s);
+char *string_toupper(char *s)
 {
 	int index;
 
