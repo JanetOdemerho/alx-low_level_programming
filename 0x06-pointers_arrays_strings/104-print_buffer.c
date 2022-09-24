@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_line - entry point
+ * print_buffer - entry point
  * @b: first parameter
  * @size: second parameter
  * Return: void
