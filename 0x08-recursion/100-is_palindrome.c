@@ -2,6 +2,7 @@
 
 int is_palindrome(char *s);
 void _detect(char *s, int o, int e, int *result);
+int _strlen_recursion(char *s);
 
 /**
  * is_palindrome - entry point
@@ -37,4 +38,22 @@ void _detect(char *s, int o, int e, int *result)
 			*result *= 0;
 		_detect(s, o + 1, e - 1, result);
 	}
+}
+
+/**
+ * _strlen_recursion - calculates the length of a string
+ * @s: string parameter
+ * Description: a supporting function
+ * Return: length of string
+ */
+
+int _strlen_recursion(char *s)
+	int length = 0;
+
+	if (*s != '\0')
+	{
+		length++;
+		length += _strlen_recursion(s + 1)
+	}
+	return (length)
 }
