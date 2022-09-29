@@ -1,5 +1,8 @@
 #include "main.h"
 
+int _sqrt_recursion(int n);
+int _sqrt_num(int n, int sq);
+
 /**
  * _sqrt_recursion - entry point
  * @n: parameter
