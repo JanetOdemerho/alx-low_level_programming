@@ -12,7 +12,7 @@ int countwords(char *str);
 
 char **strtow(char *str)
 {
-	char **matrix, tmp;
+	char **matrix, *tmp;
 	int a, b = 0, len = 0, wrd, c = 0, start, end;
 
 	while (*(str + len))
