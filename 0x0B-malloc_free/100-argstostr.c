@@ -13,11 +13,13 @@ char *argstostr(int ac, char **av)
 	int a, b, c, d;
 	char *arg;
 
-	a = b = c = d = 0;
+	c = d = 0;
 	if (ac == 0 || av == NULL)
 		return (NULL);
+	a = 0;
 	while (a < ac)
 	{
+		b = 0;
 		while (av[a][b])
 		{
 			d++;
@@ -29,8 +31,11 @@ char *argstostr(int ac, char **av)
 	arg = malloc((sizeof(char) * d) + 1);
 	if (arg == NULL)
 		return (NULL);
+
+	a = 0;
 	while (a < ac)
 	{
+		b = 0;
 		while (av[a][b])
 		{
 			arg[c] = av[a][b];
