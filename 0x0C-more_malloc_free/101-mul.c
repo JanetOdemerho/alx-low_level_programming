@@ -5,10 +5,8 @@
 int str_len(char *s);
 char *array_x(int size);
 char *iterate_zeroes(char *s);
-int convert_digit(char d);
 void mul_string(char *result, char *s, int d, int z);
 void add_nums(char *r1, char *r2, int r_len);
-int main(int argc, char *argv[]);
 
 /**
  * str_len - finds string length
