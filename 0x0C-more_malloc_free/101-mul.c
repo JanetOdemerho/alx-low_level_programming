@@ -152,7 +152,7 @@ void add_nums(char *r1, char *r2, int r_len)
 		tens = num / 10;
 
 		r2--;
-		r_len;
+		r_len--;
 	}
 
 	for (; r_len >= 0 && *r2 != 'x'; r_len--)
