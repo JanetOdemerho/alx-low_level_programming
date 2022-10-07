@@ -26,7 +26,7 @@ int str_len(char *s)
 /**
  * array_x - creates an array of character and initialize it with x
  * @size: size of array
- * return: the array
+ * Return: the array
  */
 
 char *array_x(int size)
@@ -108,7 +108,7 @@ void mul_string(char *result, char *s, int d, int z)
 		result--;
 	}
 
-	for (; mul_len >= 0; mul_len--, s--, result--)
+	for (; mul_len >= 0; mul_len--; s--; result--)
 	{
 		if (*s < '0' || *s > '9')
 		{
