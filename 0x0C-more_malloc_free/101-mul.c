@@ -208,9 +208,9 @@ int main(int argc, char *argv[])
 	for (i = 0; r1[i]; i++)
 	{
 		if (r1[i] != 'x')
-			putchar(r1[i]);
+			_putchar(r1[i]);
 	}
-	putchar('\n');
+	_putchar('\n');
 	free(r2);
 	free(r1);
 	return (0);
