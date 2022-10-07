@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 int str_len(char *s);
 char *array_x(int size);
@@ -208,9 +210,9 @@ int main(int argc, char *argv[])
 	for (i = 0; r1[i]; i++)
 	{
 		if (r1[i] != 'x')
-			_putchar(r1[i]);
+			putchar(r1[i]);
 	}
-	_putchar('\n');
+	putchar('\n');
 	free(r2);
 	free(r1);
 	return (0);
