@@ -115,7 +115,7 @@ int main(int argc, char **argv)
 	keygen[2] = ((char *)alph)[(ch ^ 85) & 63];
 
 	keygen[3] = ((char *)alph)[f4(argv[1], len)];
-	
+
 	keygen[4] = ((char *)alph)[f5(argv[1], len)];
 
 	keygen[5] = ((char *)alph)[f6(argv[1])];
